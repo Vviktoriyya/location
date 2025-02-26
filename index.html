@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Title</title>
+    <style>
+        body{
+            background: black;
+        }
+        .positionText{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding-top: 200px;
+        }
+
+        #demo{
+            font-family: "Press Start 2P", serif;
+            font-weight: 400;
+            font-style: normal;
+            color: white;
+            font-size: 50px;
+            animation: blink 5s infinite;
+        }
+        @keyframes blink {
+            0% {
+                opacity: 1;
+            }
+            97%{
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        img{
+            width: 400px;
+            height: 400px;
+        }
+        @media (max-width: 850px) {
+            #demo {
+                font-size: 1em;
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="positionText">
+    <img src="./img/eye.gif" alt="deteil">
+    <p id="demo"></p>
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
